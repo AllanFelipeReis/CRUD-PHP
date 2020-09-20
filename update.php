@@ -35,19 +35,19 @@ if (isset($_GET['id'])) {
     <form action="update.php?id=<?=$people['id']?>" method="post">
         <label for="name">Name</label>
         <label for="email">Email</label>
-        <input type="text" name="name" placeholder="1" value="<?=$people['name']?>" id="name">
-        <input type="text" name="email" placeholder="John Doe" value="<?=$people['email']?>" id="email">
+        <input type="text" name="name" placeholder="Allan" value="<?=$people['name']?>" id="name">
+        <input type="text" name="email" placeholder="Allan@allan.com" value="<?=$people['email']?>" id="email">
         <label for="cpf">CPF</label>
         <label for="rg">RG</label>
-        <input type="text" name="cpf" placeholder="johndoe@example.com" value="<?=$people['cpf']?>" id="cpf">
-        <input type="text" name="rg" placeholder="2025550143" value="<?=$people['rg']?>" id="rg">
+        <input type="text" name="cpf" placeholder="40647955806" value="<?=$people['cpf']?>" id="cpf">
+        <input type="text" name="rg" placeholder="5087258305" value="<?=$people['rg']?>" id="rg">
         <label for="marital_status">Marital Status</label>
         <label for="created">Birth Date</label>
-        <input type="text" name="marital_status" placeholder="Employee" value="<?=$people['marital_status']?>" id="marital_status">
+        <input type="text" name="marital_status" placeholder="Solteiro" value="<?=$people['marital_status']?>" id="marital_status">
         <input type="date" name="birth_date" value="<?=$people['birth_date']?>" id="birth_date">
         <label for="created">Gender</label>
         <label for=""></label>
-        <input type="text" name="gender" id="gender" value="<?=$people['gender']?>">
+        <input type="text" name="gender" id="gender" placeholder="Masculino" value="<?=$people['gender']?>">
         <input type="submit" value="Update">
     </form>
     <?php if ($msg): ?>
